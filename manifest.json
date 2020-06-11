@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Modify CSS and HTML",
+  "version": "0.1.1",
+  "description": "Lateral blog post demo extension",
+  "permissions":["https://*/","https://www.paperswithcode.com/*","https://scholar.google.com/*"],
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://scholar.google.com/*","https://www.google.com/"]
+  }],
+  "background": {
+   "scripts": ["background.js"],
+   "persistent": false
+ }
+
+
+}
