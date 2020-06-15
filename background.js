@@ -28,10 +28,15 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
           var txt = elems[0].childNodes[3].childNodes[3].text
 
         }
-        var code_str = "var panels = document.getElementsByClassName('gs_ri'); "
-       + "panels[" + request.ind + "].childNodes[3].innerHTML+='<a href=\"" + paperurl + "\">"
-       + txt
-       + "</a>';"
+       //  var code_str = "var panels = document.getElementsByClassName('gs_ri'); "
+       // + "panels[" + request.ind + "].childNodes[3].innerHTML+='<a href=\"" + paperurl + "\">"
+       // + txt
+       // + "</a>';"
+       var code_str = "var panels = document.getElementsByClassName('gs_ri');"
+       +"var a = document.createElement('a');"
+       +"a.innerText =\"" + txt +"\";"
+       +"a.href =\"" + paperurl +"\";"
+      + "panels[" + request.ind + "].childNodes[3].appendChild(a);"
        // alert(code_str)
        // TODO: add dom element
         chrome.tabs.executeScript( {
