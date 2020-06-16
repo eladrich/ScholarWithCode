@@ -1,14 +1,16 @@
 {
   "manifest_version": 2,
 
-  "name": "Modify CSS and HTML",
-  "version": "0.1.1",
-  "description": "Lateral blog post demo extension",
-  "permissions":["https://*/","https://www.paperswithcode.com/*","https://scholar.google.com/*"],
+  "name": "Scholar with Code",
+  "version": "1.0",
+  "icons":{
+    "493":"logo.png"
+  },
+  "description": "An extension to show code implementations from  Papers with Code directly in Google Scholar.",
+  "permissions":["https://*/","https://www.paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*"],
   "content_scripts": [{
-    "css": ["styles.css"],
     "js": ["content.js"],
-    "matches": ["https://scholar.google.com/*","https://www.google.com/"]
+    "matches": ["https://scholar.google.com/*","https://scholar.google.co.il/*"]
   }],
   "background": {
    "scripts": ["background.js"],
