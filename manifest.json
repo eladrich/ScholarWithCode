@@ -2,12 +2,12 @@
   "manifest_version": 2,
 
   "name": "Scholar with Code",
-  "version": "1.0",
+  "version": "1.0.1",
   "icons":{
     "493":"logo.png"
   },
   "description": "An extension to show code implementations from  Papers with Code directly in Google Scholar.",
-  "permissions":["https://*/","https://www.paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*"],
+  "permissions":["https://paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*"],
   "content_scripts": [{
     "js": ["content.js"],
     "matches": ["https://scholar.google.com/*","https://scholar.google.co.il/*"]
