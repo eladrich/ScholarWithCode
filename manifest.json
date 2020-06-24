@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Scholar with Code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icons":{
     "493":"logo.png"
   },
