@@ -1,4 +1,7 @@
 # Scholar With Code
+
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/nlnjigejpgngahmoainkakaafabijeki)](https://chrome.google.com/webstore/detail/scholar-with-code/nlnjigejpgngahmoainkakaafabijeki)
+
 A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar`.
 
 <p align="center">
@@ -29,4 +32,4 @@ As it is kind of annoying to go back and forth between the two, I've written a s
 
 ## TODOs
 - [x] Publish to Chrome Web Store
-- [ ] Check how to remove permissions to all sites (for some reason requesting permission only to Google Scholar and Papers with Code did not seem to work)
+- [x] Check how to remove permissions to all sites
