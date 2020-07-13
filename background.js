@@ -21,7 +21,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             var txt = "no code implementation"; // No result with same title
           }
         }
-       var code_str = "var panels = document.getElementsByClassName('gs_ri');"
+		sendResponse({txt: txt, paper_link: paper_link});
+/*        var code_str = "var panels = document.getElementsByClassName('gs_ri');"
        +"var a = document.createElement('a');"
        +"a.innerText =\"" + txt +"\";"
        +"a.href =\"" + paper_link +"\";"
@@ -30,7 +31,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         chrome.tabs.executeScript( {
           code: code_str
         });
-      }
+ */      }
     }
     xhr.send();
+	return true;
 });

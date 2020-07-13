@@ -6,16 +6,18 @@
   "icons":{
     "493":"logo.png"
   },
-  "description": "An extension to show code implementations from  Papers with Code directly in Google Scholar.",
-  "permissions":["https://paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*"],
+  "description": "An extension to show code implementations from Papers with Code directly in Google Scholar.",
+  "permissions":["https://paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*", "https://arxiv.org/*"],
   "content_scripts": [{
-    "js": ["content.js"],
+    "js": ["content_scholar.js"],
     "matches": ["https://scholar.google.com/*","https://scholar.google.co.il/*"]
+  },
+  {
+    "js": ["content_arxiv.js"],
+    "matches": ["https://arxiv.org/abs/*"]
   }],
   "background": {
    "scripts": ["background.js"],
    "persistent": false
  }
-
-
 }
