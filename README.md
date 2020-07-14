@@ -5,13 +5,15 @@
 A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar` and `arXiv`.
 
 <p align="center">
-<img src="docs/teaser.gif" width="800px"/>
+<img src="docs/teaser_scholar.gif" width="800px"/>
  </p>
 
 ## Recent Updates
 **`2020.06.24`**: Chrome Extension release
 
 **`2020.06.16`**: First Release
+
+**`2020.07.15`**: arXiv Support
 
 
 ## Why?
@@ -22,7 +24,7 @@ I've noticed that a thing that I do a lot is to start from a paper I know, go th
 As it is kind of annoying to go back and forth between the two, I've written a small chrome extension that shows whether the paper has code implementation and links to the matching page on `Papers with Code`.
 
 <p align="center">
-<img src="docs/teaser.png" width="800px"/>
+<img src="docs/teaser_scholar.png" width="800px"/>
  </p>
 
  ## Installation

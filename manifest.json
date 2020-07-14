@@ -2,22 +2,22 @@
   "manifest_version": 2,
 
   "name": "Scholar with Code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icons":{
-    "493":"logo.png"
+    "493":"docs/logo.png"
   },
   "description": "An extension to show code implementations from Papers with Code directly in Google Scholar.",
   "permissions":["https://paperswithcode.com/*","https://scholar.google.com/*","https://scholar.google.co.il/*", "https://arxiv.org/*"],
   "content_scripts": [{
-    "js": ["content_scholar.js"],
+    "js": ["src/content_scholar.js"],
     "matches": ["https://scholar.google.com/*","https://scholar.google.co.il/*"]
   },
   {
-    "js": ["content_arxiv.js"],
+    "js": ["src/content_arxiv.js"],
     "matches": ["https://arxiv.org/abs/*"]
   }],
   "background": {
-   "scripts": ["background.js"],
+   "scripts": ["src/background.js"],
    "persistent": false
  }
 }
