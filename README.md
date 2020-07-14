@@ -6,7 +6,11 @@ A simple chrome extension to present the number of available code implementions 
 
 <p align="center">
 <img src="docs/teaser_scholar.gif" width="800px"/>
- </p>
+</p>
+<br>
+<p align="center">
+<img src="docs/teaser_arxiv.gif" width="800px"/>
+</p>
 
 ## Recent Updates
 **`2020.06.24`**: Chrome Extension release
