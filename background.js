@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             var txt = "no code implementation"; // No result with same title
           }
         }
-		sendResponse({i: request.i, txt: txt, paper_link: paper_link});
+		sendResponse({txt: txt, paper_link: paper_link, payload: request.payload});
 	  }
     }
     xhr.send();
