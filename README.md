@@ -13,11 +13,11 @@ A simple chrome extension to present the number of available code implementions 
 </p>
 
 ## Recent Updates
+**`2020.07.15`**: Added arXiv Support
+
 **`2020.06.24`**: Chrome Extension release
 
 **`2020.06.16`**: First Release
-
-**`2020.07.15`**: arXiv Support
 
 
 ## Why?
