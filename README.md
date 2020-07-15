@@ -2,16 +2,22 @@
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/nlnjigejpgngahmoainkakaafabijeki)](https://chrome.google.com/webstore/detail/scholar-with-code/nlnjigejpgngahmoainkakaafabijeki)
 
-A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar`.
+A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar` and `arXiv`.
 
 <p align="center">
-<img src="teaser.gif" width="800px"/>
- </p>
+<img src="docs/teaser_scholar.gif" width="800px"/>
+</p>
+<br>
+<p align="center">
+<img src="docs/teaser_arxiv.gif" width="800px"/>
+</p>
 
 ## Recent Updates
 **`2020.06.24`**: Chrome Extension release
 
 **`2020.06.16`**: First Release
+
+**`2020.07.15`**: arXiv Support
 
 
 ## Why?
@@ -22,7 +28,7 @@ I've noticed that a thing that I do a lot is to start from a paper I know, go th
 As it is kind of annoying to go back and forth between the two, I've written a small chrome extension that shows whether the paper has code implementation and links to the matching page on `Papers with Code`.
 
 <p align="center">
-<img src="teaser.png" width="800px"/>
+<img src="docs/teaser_scholar.png" width="800px"/>
  </p>
 
  ## Installation
@@ -33,3 +39,4 @@ As it is kind of annoying to go back and forth between the two, I've written a s
 ## TODOs
 - [x] Publish to Chrome Web Store
 - [x] Check how to remove permissions to all sites
+- [x] Support arXiv.org
