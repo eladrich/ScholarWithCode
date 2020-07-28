@@ -14,9 +14,11 @@ let observer = new MutationObserver((mutations) => {
 					var a = result.firstChild.cloneNode(true);
 					let xmlns = 'http://www.w3.org/2000/svg';
                     var svgElem = document.createElementNS(xmlns, "svg");
-                    svgElem.setAttributeNS(null, "viewBox", "0 0 24 24");
-                    svgElem.setAttributeNS(null, "width", 24);
-                    svgElem.setAttributeNS(null, "height", 24);
+					let iconSize = 18;
+					let viewSize = 432 / iconSize;
+                    svgElem.setAttributeNS(null, "viewBox", "0 0 " + viewSize + " " + viewSize);
+                    svgElem.setAttributeNS(null, "width", iconSize);
+                    svgElem.setAttributeNS(null, "height", iconSize);
                     var path1 = document.createElementNS(xmlns,"path");
                     path1.setAttributeNS(null, "d", "M0 0h24v24H0V0z");
                     path1.setAttributeNS(null, "fill", "none");
