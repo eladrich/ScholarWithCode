@@ -12,7 +12,19 @@ let observer = new MutationObserver((mutations) => {
                     var results = document.getElementsByClassName('paper-actions');				
 					var result = results[response.payload];
 					var a = result.firstChild.cloneNode(true);
-                    a.firstChild.childNodes[0].classList[1] = "icon-fa-code";
+					let xmlns = 'http://www.w3.org/2000/svg';
+                    var svgElem = document.createElementNS(xmlns, "svg");
+                    svgElem.setAttributeNS(null, "viewBox", "0 0 24 24");
+                    svgElem.setAttributeNS(null, "width", 24);
+                    svgElem.setAttributeNS(null, "height", 24);
+                    var path1 = document.createElementNS(xmlns,"path");
+                    path1.setAttributeNS(null, "d", "M0 0h24v24H0V0z");
+                    path1.setAttributeNS(null, "fill", "none");
+                    var path2 = document.createElementNS(xmlns,"path");
+                    path2.setAttributeNS(null, "d", "M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z");
+                    svgElem.appendChild(path1);
+                    svgElem.appendChild(path2);
+                    a.firstChild.replaceChild(svgElem, a.firstChild.firstChild);
 					a.firstChild.childNodes[1].innerText = response.txt;
                     a.href = response.paper_link;
                     result.appendChild(a);
@@ -31,17 +43,3 @@ observer.observe(document.body, {
 
 // stop watching using:
 // observer.disconnect()
-
-/*
-paper-actions example element:
-
-<a class="icon-button paper-link" data-selenium-selector="paper-link" data-heap-id="paper_link_target" data-heap-link-type="ieee" data-heap-direct-pdf-link="false" data-heap-unpaywall-link="false" data-heap-primary-link="true" data-heap-paper-id="f401f5067c35ae034cc6aedb9bbc876ebb5b570a" target="_blank" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9010003">
-   <span class="flex-row-centered">
-      <svg width="15" height="15" class="icon-svg icon-fa-link-out" data-selenium-selector="icon-fa-link-out">
-         <use xlink:href="#fa-link-out"></use>
-      </svg>
-      <span class="icon-button-text">View on IEEE</span>
-   </span>
-</a>
-
-*/
