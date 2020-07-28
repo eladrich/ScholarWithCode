@@ -2,7 +2,7 @@
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/nlnjigejpgngahmoainkakaafabijeki)](https://chrome.google.com/webstore/detail/scholar-with-code/nlnjigejpgngahmoainkakaafabijeki)
 
-A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar` and `arXiv`.
+A simple chrome extension to present the number of available code implementions (via `Papers With Code`) for articles listed on `Google Scholar`, `arXiv` and `Semantic Scholar`.
 
 <p align="center">
 <img src="docs/teaser_scholar.gif" width="800px"/>
@@ -13,6 +13,8 @@ A simple chrome extension to present the number of available code implementions 
 </p>
 
 ## Recent Updates
+**`2020.07.29`**: Added Semantic Scholar Support
+
 **`2020.07.15`**: Added arXiv Support
 
 **`2020.06.24`**: Chrome Extension release
@@ -40,3 +42,4 @@ As it is kind of annoying to go back and forth between the two, I've written a s
 - [x] Publish to Chrome Web Store
 - [x] Check how to remove permissions to all sites
 - [x] Support arXiv.org
+- [x] Support Semantic Scholar
