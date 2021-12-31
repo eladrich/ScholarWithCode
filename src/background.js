@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         else {
           var title = elems[0].childNodes[1].textContent.toUpperCase()
           if (title == request.title.toUpperCase()){
-            var txt = elems[0].childNodes[3].childNodes[3].text;
+            var txt = elems[0].childNodes[3].childNodes[1].text;
             paper_link = elems[0].childNodes[1].childNodes[0].href; // If exist, use page url
           }
           else {
